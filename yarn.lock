@@ -66,6 +66,10 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
+antlr4@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/antlr4/-/antlr4-4.7.0.tgz#297f956ddc06f83397fc0990ecf2e0cf20bfbbee"
+
 anymatch@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.0.tgz#a3e52fa39168c825ff57b0248126ce5a8ff95507"
@@ -867,6 +871,18 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap-vue@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-0.18.0.tgz#e8570724dd0dd4cba82344aec9acd7d7b8a9dfec"
+  dependencies:
+    bootstrap "^4.0.0-alpha.6"
+    tether latest
+    vue "^2.3.3"
+
+bootstrap@^4.0.0-alpha.6:
+  version "4.0.0-beta"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-beta.tgz#dc5928175d2e71310bc668cf9e05a907211b72a6"
+
 brace-expansion@^1.0.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
@@ -1101,6 +1117,10 @@ coa@~1.0.1:
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+
+codemirror@^5.28.0:
+  version "5.29.0"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.29.0.tgz#e68de1350e2f0ce804a3930576d0ae318736e967"
 
 color-convert@^1.3.0:
   version "1.8.2"
@@ -1618,6 +1638,10 @@ esprima@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
 
+estree-walker@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.3.1.tgz#e6b1a51cf7292524e7237c312e5fe6660c1ce1aa"
+
 esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
@@ -1779,6 +1803,10 @@ find-up@^1.0.0:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^0.1.5:
   version "0.1.6"
@@ -2448,6 +2476,10 @@ load-json-file@^1.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
+
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
 
 loader-runner@^2.3.0:
   version "2.3.0"
@@ -3543,6 +3575,19 @@ ripemd160@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-1.0.1.tgz#93a4bbd4942bc574b69a8fa57c71de10ecca7d6e"
 
+rollup-plugin-json@^2.1.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-2.3.0.tgz#3c07a452c1b5391be28006fbfff3644056ce0add"
+  dependencies:
+    rollup-pluginutils "^2.0.1"
+
+rollup-pluginutils@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.0.1.tgz#7ec95b3573f6543a46a6461bd9a7c544525d0fc0"
+  dependencies:
+    estree-walker "^0.3.0"
+    micromatch "^2.3.11"
+
 safe-buffer@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -3590,6 +3635,12 @@ send@0.14.1:
     on-finished "~2.3.0"
     range-parser "~1.2.0"
     statuses "~1.3.0"
+
+sequence-parser@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.3.3.tgz#8dc18047ef5a062a4cbfac7b09eb7584070668e0"
+  dependencies:
+    antlr4 "^4.7.0"
 
 serve-index@^1.7.2:
   version "1.8.0"
@@ -3916,6 +3967,10 @@ tar@~2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
+tether@latest:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.0.tgz#0f9fa171f75bf58485d8149e94799d7ae74d1c1a"
+
 thunky@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-0.1.0.tgz#bf30146824e2b6e67b0f2d7a4ac8beb26908684e"
@@ -4072,6 +4127,18 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-analytics@^4.2.1:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-4.4.0.tgz#a64a94a20f0d04259ce4a5f5240c9d53ac834244"
+  dependencies:
+    load-script "^1.0.0"
+
+vue-codemirror@^3.0.8:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/vue-codemirror/-/vue-codemirror-3.1.4.tgz#daf5f567d1f7532ee45bae48b863f9b621f42958"
+  dependencies:
+    codemirror "^5.28.0"
+
 vue-hot-reload-api@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.1.0.tgz#9ca58a6e0df9078554ce1708688b6578754d86de"
@@ -4094,6 +4161,29 @@ vue-loader@^12.1.0:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.2.2"
 
+vue-router@^2.3.1:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.7.0.tgz#16d424493aa51c3c8cce8b7c7210ea4c3a89aff1"
+
+vue-sequence@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/vue-sequence/-/vue-sequence-0.3.4.tgz#8352a7c8abee5eb1ee8ea72e89c035f5bd65c38a"
+  dependencies:
+    bootstrap-vue "^0.18.0"
+    font-awesome "^4.7.0"
+    sequence-parser "^0.3.3"
+    vue "^2.3.3"
+    vue-analytics "^4.2.1"
+    vue-codemirror "^3.0.8"
+    vue-router "^2.3.1"
+    vue-social-sharing "^2.2.3"
+
+vue-social-sharing@^2.2.3:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/vue-social-sharing/-/vue-social-sharing-2.2.5.tgz#366892638748b8abfa8d4377a20e10b29493b937"
+  dependencies:
+    rollup-plugin-json "^2.1.0"
+
 vue-style-loader@^3.0.0:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-3.0.3.tgz#623658f81506aef9d121cdc113a4f5c9cac32df7"
@@ -4112,13 +4202,17 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.4.2.tgz#0bc595cda68fc27779568926fcead13553a335df"
 
-vue@^2.4.2:
+vue@^2.3.3, vue@^2.4.2:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.4.4.tgz#ea9550b96a71465fd2b8b17b61673b3561861789"
 
 vuetify@^0.15.7:
   version "0.15.7"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.15.7.tgz#a712d646485d22dfd8b7ab2e70fb378582beb9d7"
+
+vuex@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-2.4.0.tgz#e1d0430646282b40007fdd06ec6ae88a9f5a1e14"
 
 watchpack@^1.3.1:
   version "1.4.0"

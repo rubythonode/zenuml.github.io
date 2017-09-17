@@ -3,6 +3,7 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: './src/main.js',
+  node: { fs: "empty" },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -48,6 +49,10 @@ module.exports = {
       {
         test: /\.styl$/,
         loader: ['style-loader', 'css-loader', 'stylus-loader']
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
