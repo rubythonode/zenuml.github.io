@@ -77,5 +77,6 @@ export default {
 <style>
   .code .CodeMirror {
     height: 100%;
+    z-index: 0;
   }
 </style>
