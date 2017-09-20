@@ -17,3 +17,5 @@ new Vue({
   store: Store,
   render: h => h(App)
 })
+
+Store.commit('code', 'A.methodA { B.methodB() }')
