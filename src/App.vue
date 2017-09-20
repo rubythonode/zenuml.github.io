@@ -55,7 +55,7 @@
       <v-container fluid>
         <v-slide-y-transition mode="out-in">
           <v-layout column align-center>
-            <seq-diagram code="A.methodA"></seq-diagram>
+            <workspace></workspace>
           </v-layout>
         </v-slide-y-transition>
       </v-container>
