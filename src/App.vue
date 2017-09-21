@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app light class="application--toolbar application--footer">
     <!--By default clipped is false, so we need this attribute and set it as true-->
     <v-navigation-drawer
       persistent
@@ -34,12 +34,10 @@
       <v-toolbar-title v-text="title"></v-toolbar-title>
     </v-toolbar>
     <main>
-      <v-container fluid>
-        <v-slide-y-transition mode="out-in">
-          <v-layout column align-center>
-            <workspace></workspace>
-          </v-layout>
-        </v-slide-y-transition>
+      <v-container class="wrapper">
+        <article class="main">
+          <workspace></workspace>
+        </article>
       </v-container>
     </main>
     <v-footer fixed="true">
@@ -62,3 +60,20 @@
     }
   }
 </script>
+
+<style>
+  .container.wrapper {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .main {
+    flex: 1 0px;
+  }
+
+</style>

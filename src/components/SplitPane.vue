@@ -6,10 +6,10 @@
        :class="{ dragging: dragging }">
     <div class="left" :style="{ width: split + '%' }">
       <slot name="left"></slot>
+        <div class="dragger" @mousedown.prevent="dragStart">
+        </div>
     </div>
-    <div class="right" :style="{ width: (100 - split) + '%' }">
-      <div class="dragger" @mousedown.prevent="dragStart">
-      </div>
+      <div class="right" :style="{ width: (100 - split) + '%' }">
       <slot name="right"></slot>
     </div>
   </div>
@@ -58,23 +58,27 @@
   .right {
     position: relative;
     height: 100%;
+    display: flex;
+    overflow: scroll;
   }
 
-  .left {
-    border-right: 1px solid rgba(0,0,0,0.15);
+  .left>div,
+  .right>div {
+    width: 100%;
   }
 
-  .app.dark .left {
-    border-right: 1px solid rgba(0,0,0,0.15);
+  .right {
+    border-left: 1px solid rgba(0,0,0,0.15);
   }
 
-  .dragger {
+  .left>.dragger {
+    background: rgba(0,0,0,0.15);
     position: absolute;
     z-index: 99;
     top: 0;
     bottom: 0;
-    left: -5px;
-    width: 10px;
+    right: -2px;
+    width: 4px;
     cursor: ew-resize;
   }
 </style>

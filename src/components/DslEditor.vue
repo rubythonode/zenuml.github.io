@@ -75,6 +75,10 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style>
+  .code {
+    height: 100%;
+  }
+
   .code .CodeMirror {
     height: 100%;
     z-index: 0;
