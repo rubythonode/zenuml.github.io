@@ -8,20 +8,28 @@
       v-model="drawer"
       enable-resize-watcher
     >
-      <v-list>
-        <v-list-tile 
-          v-for="(item, i) in items"
-          :key="i"
-          value="true"
-        >
-          <v-list-tile-action>
-            <v-icon light v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
+      <v-layout>
+        <v-flex xs12 sm12>
+          <v-card class="example">
+            <img src="/public/A_method.png">
+            <v-card-title>
+              <div>
+                <div><pre>A.method</pre></div>
+              </div>
+            </v-card-title>
+          </v-card>
+          <v-card class="example">
+            <img src="/public/A_method_internalMethod.png">
+            <v-card-title>
+              <div>
+                <div><pre>A.method() {
+  internalMethod()
+}</pre></div>
+              </div>
+            </v-card-title>
+          </v-card>
+        </v-flex>
+      </v-layout>
     </v-navigation-drawer>
     <v-toolbar fixed>
       <v-btn
