@@ -4114,9 +4114,9 @@ vue-loader@^12.1.0:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.2.2"
 
-vue-sequence@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/vue-sequence/-/vue-sequence-0.3.6.tgz#c41ef352f67de6a4a16a6eddec478ce7aaee2484"
+vue-sequence@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/vue-sequence/-/vue-sequence-0.3.7.tgz#923f57d96ccd7e58cfd36edbffc502f4d8e84879"
   dependencies:
     sequence-parser "0.3.6"
     vue "^2.3.3"
