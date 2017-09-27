@@ -28,6 +28,30 @@
               </div>
             </v-card-title>
           </v-card>
+          <v-card class="example">
+            <img src="/public/alt.png">
+            <v-card-title>
+              <div>
+                <div><pre>A.method() {
+  if(condition) {
+    B.method()
+  }
+}</pre></div>
+              </div>
+            </v-card-title>
+          </v-card>
+            <v-card class="example">
+                <img src="/public/loop.png">
+                <v-card-title>
+                    <div>
+                        <div><pre>A.method() {
+  foreach(item) {
+    B.method()
+  }
+}</pre></div>
+                    </div>
+                </v-card-title>
+            </v-card>
         </v-flex>
       </v-layout>
     </v-navigation-drawer>
