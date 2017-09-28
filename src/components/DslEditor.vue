@@ -62,6 +62,7 @@ export default {
   methods: {
     onEditorCodeChange (newCode) {
       this.$store.commit('code', newCode)
+      ga('send', 'event', 'Code', 'change', 'editor')
     }
   },
   mounted () {
